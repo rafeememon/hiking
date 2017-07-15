@@ -1,0 +1,30 @@
+{
+  "name": "hiking",
+  "version": "0.0.0",
+  "author": {
+    "name": "Rafee Memon",
+    "email": "rafeememon@gmail.com",
+    "url": "https://github.com/rafeememon"
+  },
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@types/react": "15.0.38",
+    "@types/react-dom": "15.5.1",
+    "html-webpack-plugin": "2.29.0",
+    "html-webpack-template": "5.6.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "source-map-loader": "0.2.1",
+    "ts-loader": "2.2.2",
+    "tslint": "5.5.0",
+    "tslint-loader": "3.5.3",
+    "tslint-react": "3.0.0",
+    "typescript": "2.4.1",
+    "webpack": "2.6.1",
+    "webpack-dev-server": "2.4.5"
+  }
+}

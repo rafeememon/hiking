@@ -15,3 +15,19 @@ node {
   version = nodeVersion
   download = true
 }
+
+task run(type: NpmTask) {
+  args = ['start']
+}
+
+task build(type: NpmTask) {
+  args = ['run', 'build']
+  environment 'NODE_ENV': 'production'
+}
+
+task clean(type: Delete) {
+  delete 'build'
+}
+
+run.dependsOn npmInstall
+build.dependsOn clean, npmInstall
